@@ -11,7 +11,7 @@ case $1 in
 		exit 0
 	;;
 	status)
-		/sbin/lsmod | grep hello_kernel && exit 0 || exit 255
+		/sbin/lsmod | grep hello_kernel && exit 0 || exit 3
 	;;
 	killall)
         ;;
